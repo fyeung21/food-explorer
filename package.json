@@ -1,0 +1,31 @@
+{
+  "name": "food-explorer",
+  "version": "1.0.0",
+  "description": "responsive webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbsolcraft/WD2-Day06.git"
+  },
+  "keywords": [],
+  "author": "Fiona Y., Erin D., Aleum K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fyeung21/food-explorer/issues"
+  },
+  "homepage": "https://github.com/fyeung21/food-explorer#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-imagemin": "6.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.49.9"
+  }
+}
