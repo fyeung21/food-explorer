@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+body {
+    font-family: $font-body;
+    font-size: $font-size-body;
+    font-weight: $font-weight-body;
+    line-height: 1.5;
+    color: $font-color-body;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-heading;
+    font-weight: $font-weight-heading;
+    color: $font-color-heading;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
