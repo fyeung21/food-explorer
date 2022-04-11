@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.cuisines {
+    margin: 0.5rem auto;
+
+    h2 {
+        text-transform: uppercase;
+        background-color: $main-color;
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
+    article {
+        background-color: $card-color;
+        padding: 1rem;
+        text-transform: capitalize;
+
+        ul {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+
+    }
+}
