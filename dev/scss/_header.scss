@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 //header styles here
 header{
@@ -26,20 +27,31 @@ header{
     }
 
     nav{
+        background-color: $accent-color2;
         ul{
             list-style: none;
             background-color: $main-color;
+            padding: 1rem;
 
             li a{
+                padding: 1rem;
                 color: $font-color-heading;
                 text-decoration: none;
                 text-transform: uppercase;
-                line-height: 2rem;
-                padding: 1rem;
+            }
+        }
 
-                &:hover{
-                    // placeholder color
-                    color: $font-color-heading-hover;
+        @media(min-width: $tablet){
+            ul{
+                @include flex-row();
+
+                li a{
+                    padding: 1.15rem;
+                    &:hover{
+                        // placeholder color
+                        color: $font-color-heading-hover;
+                        background-color: $accent-color;
+                    }
                 }
             }
         }
