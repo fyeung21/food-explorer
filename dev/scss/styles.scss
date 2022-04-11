@@ -2,3 +2,20 @@
 
 @use 'normalize';
 @use 'variables';
+
+.banner {
+	margin-top: 15px;
+  img{
+    display:block;
+    width: 100%;
+  	height: auto;	
+  }
+}
+
+
+.wrapper {
+	max-width: 960px;
+	padding: 0 30px;
+	margin: 0 auto;
+	// background-color: vars.$second-color;	
+}
