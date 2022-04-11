@@ -3,25 +3,9 @@
 @use 'normalize';
 @use 'variables';
 @use 'typography';
-@use 'header';
 
 @use 'background';
+@use 'header';
+@use 'body';
 @use 'recipes';
 @use 'cuisines';
-
-.banner {
-	margin-top: 15px;
-  img{
-    display:block;
-    width: 100%;
-  	height: auto;	
-  }
-}
-
-
-.wrapper {
-	max-width: 960px;
-	padding: 0 30px;
-	margin: 0 auto;
-	// background-color: vars.$second-color;	
-}
