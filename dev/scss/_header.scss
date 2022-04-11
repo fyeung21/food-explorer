@@ -27,7 +27,7 @@ header{
     }
 
     nav{
-        padding: 0 0 1rem;
+        padding: 0 0 .97rem;
         background-color: $accent-color2;
         ul{
             list-style: none;
@@ -45,6 +45,10 @@ header{
         @media(min-width: $tablet){
             ul{
                 @include flex-row();
+                justify-content: space-between;
+                padding: inherit 2rem;
+                max-width: 960px;
+                margin: 0 auto;
 
                 li a{
                     padding: 1.15rem;
