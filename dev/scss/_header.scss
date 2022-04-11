@@ -1,0 +1,68 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+//header styles here
+header{
+    
+    font-family: $font-navigation;
+    font-weight: $font-weight-navigation;
+
+    div:nth-child(1){
+        span{
+            color: $font-color-alt-heading;
+            // only for icon size
+            font-size: 2rem;
+            padding: .5rem;
+        }
+        
+        span:hover{
+            // only for the icon hovers
+            color: #9e9fa4;
+        }
+
+        img{
+            max-width: 50%;
+            padding: 1rem;
+        }
+    }
+
+    nav{
+        background-color: $accent-color2;
+        ul{
+            list-style: none;
+            background-color: $main-color;
+            padding: 1rem;
+
+            li a{
+                padding: 1rem;
+                color: $font-color-heading;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+
+        @media(min-width: $tablet){
+            ul{
+                @include flex-row();
+
+                li a{
+                    padding: 1.15rem;
+                    &:hover{
+                        // placeholder color
+                        color: $font-color-heading-hover;
+                        background-color: $accent-color;
+                    }
+                }
+            }
+        }
+    }
+
+    div>input{
+        // used color only for search bar
+        background-color: #d9d9d9;
+        border-radius: 3px;
+        padding: .45rem;
+        border: none;
+        margin: 1rem;
+    }
+}

@@ -1,5 +1,17 @@
 
-//--- Font properties
+//--- Color variables
+
+$main-color: #1a71a9;
+$accent-color: #ffffff;
+$accent-color2: #005991;
+$color-alt-row: #e9e9e9; //use for alternating grey text box row in 'latest recipes' and search bar
+$color-shadow: #020202; //use for overlays when displaying text in hero section
+
+$card-color: $accent-color;
+$btn-color: $main-color;
+$btn-color-hover: $accent-color;
+
+//--- Font variables
 
 $font-navigation: 'Roboto Condensed', Arial, sans-serif;
 $font-heading: 'Roboto Condensed', Arial, sans-serif;
@@ -12,9 +24,10 @@ $font-weight-body: 300;
 $font-size-heading: 1.2rem;
 $font-size-body: 1rem;
 
-$font-color-heading: black;
-$font-color-body: black;
-
+$font-color-heading: $accent-color;
+$font-color-alt-heading: $main-color;
+$font-color-body: #020202;
+$font-color-heading-hover: $main-color;
 
 //--- Media Queries
 $tablet: 37.5rem;

@@ -1,0 +1,24 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.latest-recipes {
+    h2 {
+        @include aside-header;
+    }
+    article {
+        @include flex-row;
+        align-items: center;
+        background-color: $card-color;
+
+        img {
+            margin: 0.75rem;
+            border: 0.16rem solid $main-color;
+        }
+        p {
+            text-transform: uppercase;
+        }
+    }
+    .alt-row {
+        background-color: $color-alt-row;
+    }
+}
