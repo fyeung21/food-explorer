@@ -8,3 +8,9 @@
     display: flex;
     flex-direction: column;
 }
+@mixin aside-header{
+    text-transform: uppercase;
+    background-color: $main-color;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}

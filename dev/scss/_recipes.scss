@@ -3,10 +3,7 @@
 
 .latest-recipes {
     h2 {
-        text-transform: uppercase;
-        background-color: $main-color;
-        padding: 0.5rem 1rem;
-        margin: 0;
+        @include aside-header;
     }
     article {
         @include flex-row;
