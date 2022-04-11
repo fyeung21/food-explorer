@@ -2,44 +2,55 @@
 
 //header styles here
 header{
+    
     font-family: $font-navigation;
     font-weight: $font-weight-navigation;
 
     div:nth-child(1){
         span{
-            color: #005991;
+            color: $font-color-alt-heading;
+            // only for icon size
+            font-size: 2rem;
+            padding: .5rem;
         }
         
         span:hover{
+            // only for the icon hovers
             color: #9e9fa4;
         }
 
         img{
             max-width: 50%;
+            padding: 1rem;
         }
     }
 
     nav{
         ul{
             list-style: none;
+            background-color: $main-color;
 
             li a{
-                color: #005991;
+                color: $font-color-heading;
                 text-decoration: none;
                 text-transform: uppercase;
+                line-height: 2rem;
+                padding: 1rem;
 
                 &:hover{
-                    // not placeholder color
-                    color: pink;
+                    // placeholder color
+                    color: $font-color-heading-hover;
                 }
             }
         }
     }
 
     div>input{
+        // used color only for search bar
         background-color: #d9d9d9;
         border-radius: 3px;
         padding: .45rem;
         border: none;
+        margin: 1rem;
     }
 }
