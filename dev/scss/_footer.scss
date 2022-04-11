@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+footer {
+    background-color: $accent-color2;
+    color: $accent-color;
+
+    .footer-wrapper {
+        max-width: 320px;
+        text-align: center;
+        margin: 0 auto;
+        
+        cite {
+            font-family: $font-heading;
+            font-weight: 400;
+            font-style: normal;
+        }
+    }
+}
