@@ -20,6 +20,12 @@ header{
         }
     }
 
+    // logo styles
+    img{
+        max-width: 50%;
+        padding: 1rem;
+        }
+
     // nav 'first layer' styles
     .hide-me-mobile{
         display: none;
@@ -43,12 +49,7 @@ header{
             @include flex-row();
         }
     }
-        
-
-    img{
-    max-width: 50%;
-    padding: 1rem;
-    }
+    
 
     // nav styles
     nav{
@@ -68,7 +69,7 @@ header{
             }
         }
         
-
+        // navigation links
         ul{
             list-style: none;
             background-color: $main-color;
@@ -82,7 +83,7 @@ header{
             }
         }
         
-        // media queries
+        // media queries for the links 
         @media(min-width: $tablet){
             // makes the nav vlexed in tablet mode
             ul{
@@ -107,6 +108,7 @@ header{
             }
         }
 
+        // just ensures that the blue backdrop shows up at 64em
         @media(min-width:64em){
             ul{
                 max-width: 960px;
@@ -114,6 +116,7 @@ header{
         }
     }
 
+    // input styles 
     input{
         background-color: $color-alt-row;
         border-radius: 3px;
