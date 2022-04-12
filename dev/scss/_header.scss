@@ -3,35 +3,77 @@
 
 //header styles here
 header{
-    
+
+    // basic styles for all the header components
+    margin: 1rem 0 5rem;
     font-family: $font-navigation;
     font-weight: $font-weight-navigation;
+    color: $font-color-alt-heading;
 
-    div:nth-child(1){
-        span{
-            color: $font-color-alt-heading;
-            // only for icon size
-            font-size: 2rem;
-            padding: .5rem;
-        }
+    span{
+        font-size: 1.75rem;
+        padding: .5rem;
         
-        span:hover{
+        &:hover{
             // only for the icon hovers
-            color: #9e9fa4;
-        }
-
-        img{
-            max-width: 50%;
-            padding: 1rem;
+            color: #bdbcbc;
         }
     }
 
+    // logo styles
+    img{
+        max-width: 50%;
+        padding: 1rem;
+        }
+
+    // nav 'first layer' styles
+    .hide-me-mobile{
+        display: none;
+
+        @media (min-width: $tablet){
+            display: block;
+        }
+    }
+
+    &>div:nth-child(1){
+        @include flex-row();
+        align-items: center;
+        justify-content: space-between;
+
+        @media(min-width:64em){
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        &>div{
+            @include flex-row();
+        }
+    }
+    
+
+    // nav styles
     nav{
+
+        // basic nav styles 
+        text-align: center;
+        margin: 1rem 0;
         background-color: $accent-color2;
+        line-height: 2;
+
+        // wrapper styles
+        .nav-wrap{
+            background-color: $accent-color2;
+            
+            .white{
+                background-color: $accent-color;
+            }
+        }
+        
+        // navigation links
         ul{
             list-style: none;
             background-color: $main-color;
-            padding: 1rem;
+            padding: 1rem 0;
 
             li a{
                 padding: 1rem;
@@ -40,29 +82,81 @@ header{
                 text-transform: uppercase;
             }
         }
-
+        
+        // media queries for the links 
         @media(min-width: $tablet){
+            // makes the nav vlexed in tablet mode
             ul{
                 @include flex-row();
+                justify-content: space-between;
+                padding: inherit 2rem;
+                max-width: 97.69%;
+                margin: 0 auto;
 
                 li a{
-                    padding: 1.15rem;
+                    padding: 2rem;
                     &:hover{
-                        // placeholder color
                         color: $font-color-heading-hover;
                         background-color: $accent-color;
                     }
                 }
             }
+
+            // hides the search and icons in the mobile
+            .nav-wrap > .hide-me{
+                display: none;
+            }
+        }
+
+        // just ensures that the blue backdrop shows up at 64em
+        @media(min-width:64em){
+            ul{
+                max-width: 960px;
+            }  
         }
     }
 
-    div>input{
-        // used color only for search bar
-        background-color: #d9d9d9;
+    // input styles 
+    input{
+        background-color: $color-alt-row;
         border-radius: 3px;
         padding: .45rem;
         border: none;
-        margin: 1rem;
+        margin: .5rem;
+        width: 90%;
+        position: relative;
+    }
+
+    // hamburger button styles
+
+    #hamburger-menu{
+        width: 50px;
+	    height: 40px;
+	    border: none;
+	    background-color: transparent;
+	    padding: 4px;
+        margin-right: .24rem;
+
+        .visually-hidden{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        .fa-bars{
+            position: relative;
+            bottom: 40px;
+            color: $accent-color2;
+        }
+
+        // hide hamburger menu at this width
+        @media (min-width:$tablet){
+            display: none;
+        }
     }
 }
