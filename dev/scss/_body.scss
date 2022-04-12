@@ -49,8 +49,10 @@
       background-color: $card-color;
   } 
   .button-text{
-    text-align: end;
+    font-family: $font-navigation;
+    font-weight: 700;
     font-size: $font-size-heading;
+    text-align: end;
     margin-bottom: 20px;
   } & a{
     padding: .7rem 1rem;
@@ -67,8 +69,6 @@
 
 }
 
-
-
 .gallery-divide {
   margin-top: 1rem;
 }
@@ -76,27 +76,16 @@
     position: relative;
     display:block;
     top:-35px;
-    font-size: 1.4rem;
     } 
 
   .text-position {
     padding-bottom: 20px;      
-    font-size: $font-size-position;
     } 
 
 // icon & footer
 
-.order-icon{
+.older-posts{
   padding: 4rem 0.1rem;
 
 }
-
-  .footer{
-    text-align: center;
-    background-color: $accent-color2;
-    padding: .1rem 0.1rem;
-    color:$accent-color;
-    font-size: $font-size-heading;
-  }
- 
 

@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Food Explorer</title>
-	<link rel="stylesheet" href="assets/font-awesome/all.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-	<header>
-		<div>
-			<img src="assets/images/logo.png" alt="site logo" 
-						srcset="assets/images/logo.png 315w,
-                      	assets/images/small-logo.jpg 35w" sizes="(max-width: 26.5625em) 35px,
-                      	315px">
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Food Explorer</title>
+		<link rel="stylesheet" href="assets/font-awesome/all.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+		<header>
 			<div>
 				<button id="hamburger-menu">
 					<span class="button-content">
@@ -30,7 +24,7 @@
 
 				<div class="hide-me-mobile">
 					<input type="text" placeholder="Search..">
-				</div>
+			  </div>
 	
 				<div class="hide-me-mobile">
 					<a><span class="fa-brands fa-facebook-f"></span></a>
@@ -70,33 +64,43 @@
 			<span class="fa-solid fa-magnifying-glass"></span>
 		</div> -->
 
-	</header>
-	<main>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Recipes</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+			</nav>
 
-					
-				<section class="pictures">
-  			<div>
-    			<img src="./assets/images/mussel-small.jpg" alt="mussle"
-					sizes="(max-width: 960px) calc(100vw - 60px), 900px"
-					srcset="./assets/images/mussel-small.jpg 350w,./assets/images/mussel.jpg 704w">
+			<div>
+				<input type="text" placeholder="Search..">
+				<span class="fa-solid fa-magnifying-glass"></span>
+			</div>
+
+		</header>
+		<main>
+			<section class="pictures">
+				<div>
+					<img src="./assets/images/mussel-small.jpg" alt="mussle"
+						sizes="(max-width: 960px) calc(100vw - 60px), 900px"
+						srcset="./assets/images/mussel-small.jpg 350w,./assets/images/mussel.jpg 704w">
 					<h1>LOREM IPSUM DOLOR SIT</h1>
 				</div>
-				</section>
-			
+			</section>
 
-				<section class="food">
+			<section class="food">
 				<div>
-    		<img src="./assets/images/salad.jpg"alt="salad">
-				<h1>LOREM,IPSUM DOLOR</h1>
-  			</div>
-			
-				<div>
-    		<img 	src="./assets/images/pancake.jpg" alt="pankake">
-				<h1>SIT AMET CONSECTETRU</h1>
+					<img src="./assets/images/salad.jpg" alt="salad">
+					<h1>LOREM,IPSUM DOLOR</h1>
 				</div>
-				</section>
-			
-		
+
+				<div>
+					<img src="./assets/images/pancake.jpg" alt="pankake">
+					<h1>SIT AMET CONSECTETRU</h1>
+				</div>
+			</section>
 
 			<section class="latest-recipes">
 				<h2>latest recipes</h2>
@@ -143,47 +147,40 @@
 				</article>
 			</section>
 
-			
-
-
-<div class="gallery-section">
-		<article>
-			<h1>LOREM IPSUM DOLOR SIT AMET</h1>
-			<p class="post-position">Posted by Mike Lee on Sunday, August 25,2013</p>
-			<img alt="pasta"
-					 src="./assets/images/pasta.jpg">
-			<p class="text-position">Lorem ipsum dolor sit amet consectetur adipisicing elit. lncidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
-			<div class="button-text">
-				<a>READ MORE...</a>
-			</div>
-		</article><!-- end gallery-item -->
-	
-		 <article class="gallery-divide">
-			<h1>VEL,EAQUE QUISQUAM SIT AMET</h1>
-			<p class="post-position">Posted by Mike Lee on Monday, July 29,2013</p>
-			<img alt="ramen"
-					 src="./assets/images/ramen.jpg">
-					 <p class="text-position">Lorem ipsum dolor sit amet consectetur adipisicing elit. lncidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
-					 <div class="button-text">
+			<div class="gallery-section">
+				<article>
+					<h1>LOREM IPSUM DOLOR SIT AMET</h1>
+					<p class="post-position">Posted by Mike Lee on Sunday, August 25,2013</p>
+					<img alt="pasta"
+						src="./assets/images/pasta.jpg">
+					<p class="text-position">Lorem ipsum dolor sit amet consectetur adipisicing elit. lncidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
+					<div class="button-text">
 						<a>READ MORE...</a>
 					</div>
-		 </article><!-- end gallery-item2 -->
-		</div><!-- end gallery-section -->
+				</article><!-- end gallery-item -->
 
-			<div class="order-icon">
-				<img alt="order btn"
-						src="./assets/images/previous-btn.png">
+				<article class="gallery-divide">
+					<h1>VEL,EAQUE QUISQUAM SIT AMET</h1>
+					<p class="post-position">Posted by Mike Lee on Monday, July 29,2013</p>
+					<img alt="ramen"
+						src="./assets/images/ramen.jpg">
+					<p class="text-position">Lorem ipsum dolor sit amet consectetur adipisicing elit. lncidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
+					<div class="button-text">
+						<a>READ MORE...</a>
+					</div>
+				</article><!-- end gallery-item2 -->
+			</div><!-- end gallery-section -->
+
+			<div class="older-posts">
+				<img alt="older posts button"
+					src="./assets/images/previous-btn.png">
 			</div>
-
-<footer class="footer">
-		<p class="p"> 2013 Site designed by Michael Lee. For educational purpose only. Image Credits</p>
-</footer>
-</main>
-<footer>
-	<div class="footer-wrapper">
-		<cite>&copy; 2013 <span>Site designed by Michael Lee. For educational purposes only. Image Credits</span></cite>
-	</div>
-</footer>
-<script src="scripts/script.js"></script>
-</body>
+		</main>
+		<footer>
+			<div class="footer-wrapper">
+				<cite>&copy; 2013 <span>Site designed by Michael Lee. For educational purposes only. Image Credits</span></cite>
+			</div>
+		</footer>
+		<script src="scripts/script.js"></script>
+	</body>
 </html>
