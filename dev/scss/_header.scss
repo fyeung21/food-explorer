@@ -5,13 +5,13 @@
 header{
 
     // basic styles for all the header components
-    margin: 1rem 0 6rem;
+    margin: 1rem 0 5rem;
     font-family: $font-navigation;
     font-weight: $font-weight-navigation;
     color: $font-color-alt-heading;
 
     span{
-        font-size: 2rem;
+        font-size: 1.75rem;
         padding: .5rem;
         
         &:hover{
@@ -33,6 +33,10 @@ header{
         @include flex-row();
         align-items: center;
         justify-content: space-between;
+
+        &>div{
+            @include flex-row();
+        }
     }
         
 
@@ -88,12 +92,17 @@ header{
                     }
                 }
             }
+
+            // hides the search and icons in the mobile
+            .nav-wrap > .hide-me{
+                display: none;
+            }
         }
 
         @media(min-width:64em){
             ul{
                 max-width: 960px;
-            }
+            }  
         }
     }
 
