@@ -3,36 +3,59 @@
 
 //header styles here
 header{
+
+    // basic styles for all the header components
     margin: 1rem 0 6rem;
     font-family: $font-navigation;
     font-weight: $font-weight-navigation;
     color: $font-color-alt-heading;
 
-        span{
-            // color: $font-color-alt-heading;
-            // only for icon size
-            font-size: 2rem;
-            padding: .5rem;
-        }
+    span{
+        font-size: 2rem;
+        padding: .5rem;
         
-        span:hover{
+        &:hover{
             // only for the icon hovers
-            color: $color-alt-row;
+            color: #bdbcbc;
         }
+    }
 
-        img{
-            max-width: 50%;
-            padding: 1rem;
+    // nav 'first layer' styles
+    .hide-me-mobile{
+        display: none;
+
+        @media (min-width: $tablet){
+            display: block;
         }
+    }
 
+    &>div:nth-child(1){
+        @include flex-row();
+        align-items: center;
+        justify-content: space-between;
+    }
+        
+
+    img{
+    max-width: 50%;
+    padding: 1rem;
+    }
+
+    // nav styles
     nav{
+
+        // basic nav styles 
+        text-align: center;
         margin: 1rem 0;
         background-color: $accent-color2;
         line-height: 2;
 
+        // wrapper styles
         .nav-wrap{
             background-color: $accent-color;
         }
+        
+
         ul{
             list-style: none;
             background-color: $main-color;
@@ -46,8 +69,9 @@ header{
             }
         }
         
-
+        // media queries
         @media(min-width: $tablet){
+            // makes the nav vlexed in tablet mode
             ul{
                 @include flex-row();
                 justify-content: space-between;
@@ -73,12 +97,13 @@ header{
         }
     }
 
-    nav input{
-        // used color only for search bar
+    input{
         background-color: $color-alt-row;
         border-radius: 3px;
         padding: .45rem;
         border: none;
-        margin: 1rem;
+        margin: .5rem;
+        width: 90%;
+        position: relative;
     }
 }
