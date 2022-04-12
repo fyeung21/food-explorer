@@ -47,6 +47,7 @@ header{
 
         &>div{
             @include flex-row();
+            align-items: center;
         }
     }
     
