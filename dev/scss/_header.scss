@@ -3,12 +3,13 @@
 
 //header styles here
 header{
-    margin: 3rem 0 1rem;
+    margin: 1rem 0 6rem;
     font-family: $font-navigation;
     font-weight: $font-weight-navigation;
+    color: $font-color-alt-heading;
 
         span{
-            color: $font-color-alt-heading;
+            // color: $font-color-alt-heading;
             // only for icon size
             font-size: 2rem;
             padding: .5rem;
@@ -27,6 +28,11 @@ header{
     nav{
         margin: 1rem 0;
         background-color: $accent-color2;
+        line-height: 2;
+
+        .nav-wrap{
+            background-color: $accent-color;
+        }
         ul{
             list-style: none;
             background-color: $main-color;
@@ -39,6 +45,7 @@ header{
                 text-transform: uppercase;
             }
         }
+        
 
         @media(min-width: $tablet){
             ul{
@@ -66,12 +73,12 @@ header{
         }
     }
 
-    div>input{
+    nav input{
         // used color only for search bar
         background-color: $color-alt-row;
         border-radius: 3px;
         padding: .45rem;
         border: none;
-        // margin: 1rem;
+        margin: 1rem;
     }
 }
