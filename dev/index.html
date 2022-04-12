@@ -14,18 +14,55 @@
 	<body>
 		<header>
 			<div>
-				<img src="assets/images/logo.png" alt="site logo"
-					srcset="assets/images/logo.png 315w,
-					assets/images/small-logo.jpg 35w" sizes="(max-width: 26.5625em) 35px,
-					315px">
+				<button id="hamburger-menu">
+					<span class="button-content">
+						<span class="visually-hidden">Menu</span>
+						<span class="fa-solid fa-bars"></span>
+					</span>
+				</button>
 
-				<div>
+
+				<div class="hide-me-mobile">
+					<input type="text" placeholder="Search..">
+			  </div>
+	
+				<div class="hide-me-mobile">
 					<a><span class="fa-brands fa-facebook-f"></span></a>
 					<a><span class="fa-brands fa-google"></span></a>
 					<a><span class="fa-brands fa-twitter"></span></a>
 				</div>
 			</div>
 
+		</div>
+
+		
+		
+		<nav>
+			<div class="nav-wrap">
+				<div class="hide-me">
+					<input type="text" placeholder="Search..">
+					<!-- <span class="fa-solid fa-magnifying-glass"></span> -->
+				</div>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Recipes</a></li>
+					<li><a href="#">Contacts</a></li>
+				</ul>
+
+				<div class="hide-me white">
+					<a><span class="fa-brands fa-facebook-f"></span></a>
+					<a><span class="fa-brands fa-google"></span></a>
+					<a><span class="fa-brands fa-twitter"></span></a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- <div>	
+			<input type="text" placeholder="Search..">
+			<span class="fa-solid fa-magnifying-glass"></span>
+		</div> -->
 
 			<nav>
 				<ul>
