@@ -44,25 +44,31 @@
 
 	</header>
 	<main>
-  		<div class="wrapper">
 
-  			<div class="banner">
-    			<img alt="mussle"
-         		src="./assets/images/mussel-small.jpg">
-  			</div>
-			<h1>LOREM IPSUM DOLOR SIT</h1>
+					
+				<section class="pictures">
+  			<div>
+    			<img src="./assets/images/mussel-small.jpg" alt="mussle"
+					sizes="(max-width: 960px) calc(100vw - 60px), 900px"
+					srcset="./assets/images/mussel-small.jpg 350w,./assets/images/mussel.jpg 704w">
+					<h1>LOREM IPSUM DOLOR SIT</h1>
+				</div>
+				</section>
+			
 
-			<div class="banner">
-    		<img alt="salad"
-         		src="./assets/images/salad.jpg">
+				<section class="food">
+				<div>
+    		<img src="./assets/images/salad.jpg"alt="salad">
+				<h1>LOREM,IPSUM DOLOR</h1>
   			</div>
-			<h1>LOREM,IPSUM DOLOR</h1>
-
-			<div class="banner">
-    		<img alt="pankake"
-         		src="./assets/images/pancake.jpg">
-  			</div>
-			<h1>SIT AMET CONSECTETRU</h1>
+			
+				<div>
+    		<img 	src="./assets/images/pancake.jpg" alt="pankake">
+				<h1>SIT AMET CONSECTETRU</h1>
+				</div>
+				</section>
+			
+		
 
 			<section class="latest-recipes">
 				<h2>latest recipes</h2>
@@ -82,6 +88,7 @@
 					<img src="./assets/images/steak-tb.jpg" alt="thumbnail image of a steak dish">
 					<p>fugiat eaque aore</p>
 				</article>
+
 			</section>
 			<section class="cuisines">
 				<h2>cuisines</h2>
@@ -107,29 +114,42 @@
 					</ul>
 				</article>
 			</section>
-		</div><!-- end wrapper -->
-	
+
+			
+
 
 <div class="gallery-section">
-	<div class="gallery">
-		<div class="gallery-item1">
+		<article>
 			<h1>LOREM IPSUM DOLOR SIT AMET</h1>
-			<p>Posted by Mike Lee on Sunday, August 25,2013</p>
+			<p class="post-position">Posted by Mike Lee on Sunday, August 25,2013</p>
 			<img alt="pasta"
 					 src="./assets/images/pasta.jpg">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. lncidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
-			<button>Read More</button>
-		</div><!-- end gallery-item -->
-		 <div class="gallery-item2">
+			<p class="text-position">Lorem ipsum dolor sit amet consectetur adipisicing elit. lncidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
+			<div class="button-text">
+				<a>READ MORE...</a>
+			</div>
+		</article><!-- end gallery-item -->
+	
+		 <article class="gallery-divide">
 			<h1>VEL,EAQUE QUISQUAM SIT AMET</h1>
-			<p>Posted by Mike Lee on Monday, July 29,2013</p>
+			<p class="post-position">Posted by Mike Lee on Monday, July 29,2013</p>
 			<img alt="ramen"
 					 src="./assets/images/ramen.jpg">
-					 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. lncidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
-					 <button>Read More</button>
-		</div><!-- end gallery-item -->
-	</div><!-- end gallery -->
-</div><!-- end gallery-section -->
+					 <p class="text-position">Lorem ipsum dolor sit amet consectetur adipisicing elit. lncidunt, ab aspernatur illum odio commodi nesciunt nisi eius aperiam sint.</p>
+					 <div class="button-text">
+						<a>READ MORE...</a>
+					</div>
+		 </article><!-- end gallery-item2 -->
+		</div><!-- end gallery-section -->
+
+			<div class="order-icon">
+				<img alt="order btn"
+						src="./assets/images/previous-btn.png">
+			</div>
+
+<footer class="footer">
+		<p class="p"> 2013 Site designed by Michael Lee. For educational purpose only. Image Credits</p>
+</footer>
 </main>
 <footer>
 	<div class="footer-wrapper">

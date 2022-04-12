@@ -14,3 +14,13 @@
     padding: 0.5rem 1rem;
     margin: 0;
 }
+
+@mixin pictures-h1{
+    color:$accent-color;
+    background-color: $font-color-body;
+    position:relative;
+    width:100%;
+    top:-75px;
+    opacity: 0.7;
+}
+
