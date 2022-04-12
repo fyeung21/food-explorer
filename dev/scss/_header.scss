@@ -34,6 +34,11 @@ header{
         align-items: center;
         justify-content: space-between;
 
+        @media(min-width:64em){
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
         &>div{
             @include flex-row();
         }
@@ -56,7 +61,11 @@ header{
 
         // wrapper styles
         .nav-wrap{
-            background-color: $accent-color;
+            background-color: $accent-color2;
+            
+            .white{
+                background-color: $accent-color;
+            }
         }
         
 
@@ -84,9 +93,8 @@ header{
                 margin: 0 auto;
 
                 li a{
-                    padding: 1.15rem;
+                    padding: 2rem;
                     &:hover{
-                        // placeholder color
                         color: $font-color-heading-hover;
                         background-color: $accent-color;
                     }
@@ -114,5 +122,38 @@ header{
         margin: .5rem;
         width: 90%;
         position: relative;
+    }
+
+    // hamburger button styles
+
+    #hamburger-menu{
+        width: 50px;
+	    height: 40px;
+	    border: none;
+	    background-color: transparent;
+	    padding: 4px;
+        margin-right: .24rem;
+
+        .visually-hidden{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        .fa-bars{
+            position: relative;
+            bottom: 40px;
+            color: $accent-color2;
+        }
+
+        // hide hamburger menu at this width
+        @media (min-width:$tablet){
+            display: none;
+        }
     }
 }
