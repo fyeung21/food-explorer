@@ -1,61 +1,102 @@
 @use 'variables' as *;
-@mixin fancy-border($size:1px,$color:black){
-    border: $size solid $color;
-  }
+@use 'mixins' as *;
 
-.banner {
-    // margin-top: 15px;
-  img{
-    position: relative;
-    display:block;
-    width: 100%;
-  	height: auto;	
-    margin-top:-80px;
+.pictures {
+
+  img {
+    width:100%;
   }
+  h1  {
+  @include pictures-h1;
+}
 }
 
-.wrapper {
-    position: relative;
-	max-width: 960px;
-    height: auto;
-	padding: 0 10px;
-	margin: 0 auto;
-    h1{
-        color:$font-color-alt-heading;
-        background-color: $font-color-body;
-        position:relative;
-        top:-70px;
-        opacity: 0.7;
+.food {
+
+    img {
+      width: 100%;
+      margin-top:-80px; 
     }
-}
-
-// second img
-.gallery-section {
-    padding: 0 10px;
-    background-color: gray;
-    
+    h1  {
+      @include pictures-h1;
+    }
   
- h1{
-    font-size: 2rem;
-    // text-align: center;
-    color:$font-color-alt-heading;
-  }p{
-    // color: vars.$third-color;
-    // text-align: center;
-  }
-  .gallery {
-    // padding: 5px;
-    margin: 0 auto;
-  & img {
-    width: 100%;
-    display:block;
-    
-  }}
-  .gallery-item1,.gallery-item2{
-      background-color:white;
-  }
 }
 
-// .gallery-item:first-child {
-// 	margin-bottom: 20px;
-// }
+@media (min-width: $tablet) {
+  .pictures {
+    display: block;
+  } 
+  .food {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:0.5rem;
+  margin-top: 1rem;
+  }
+
+}
+ //second stuff
+
+ .gallery-section {
+
+  h1  {
+    color:$accent-color2;
+  }
+  article {
+      padding:0.8rem;
+      @include flex-column;
+      align-items:left;
+      background-color: $card-color;
+  } 
+  .button-text{
+    text-align: end;
+    font-size: $font-size-heading;
+    margin-bottom: 20px;
+  } & a{
+    padding: .7rem 1rem;
+    color:$accent-color;
+    background-color: $accent-color2;
+  }
+
+}
+
+@media (min-width: $tablet) {
+  .text-position{
+    font-size:1.8rem;
+  } 
+
+}
+
+
+
+.gallery-divide {
+  margin-top: 1rem;
+}
+  .post-position  {
+    position: relative;
+    display:block;
+    top:-35px;
+    font-size: 1.4rem;
+    } 
+
+  .text-position {
+    padding-bottom: 20px;      
+    font-size: $font-size-position;
+    } 
+
+// icon & footer
+
+.order-icon{
+  padding: 4rem 0.1rem;
+
+}
+
+  .footer{
+    text-align: center;
+    background-color: $accent-color2;
+    padding: .1rem 0.1rem;
+    color:$accent-color;
+    font-size: $font-size-heading;
+  }
+ 
+
