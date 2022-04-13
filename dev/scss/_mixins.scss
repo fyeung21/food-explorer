@@ -16,11 +16,12 @@
 }
 
 @mixin pictures-h1{
+    padding-left: 0.5rem;
     color:$accent-color;
     background-color: $font-color-body;
     position:relative;
-    width:100%;
-    top:-75px;
+    width:98%;
+    top:-77px;
     opacity: 0.7;
 }
 

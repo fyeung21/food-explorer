@@ -2,6 +2,7 @@
 @use 'mixins' as *;
 
 .latest-recipes {
+    margin-top: -5.5rem;
     h2 {
         @include aside-header;
     }
@@ -20,5 +21,11 @@
     }
     .alt-row {
         background-color: $color-alt-row;
+    }
+}
+
+@media (min-width: $desktop) {
+    .latest-recipes {
+        margin-top: 0rem;
     }
 }
