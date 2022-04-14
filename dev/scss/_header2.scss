@@ -11,7 +11,7 @@ header {
             width: 960px;
         }
     }
-    .hamburger-menu {
+    .hamburger-btn {
         border: none;
         background-color: transparent;
 
@@ -31,7 +31,11 @@ header {
         }
     }
 
-    .mobile-menu {
+    .mobile-menu{
+        transition: all 1s ease;
+        overflow: hidden;
+        display: none;
+
         .mobile-search {
             @include flex-row;
             position: relative;
@@ -92,6 +96,10 @@ header {
             display: none;
         }
     }
+    .mobile-menu-active {
+        display: block;
+    }
+
     //non-mobile view styles
 
     .non-mobile-view {
