@@ -126,4 +126,7 @@ exports.default = series(parallel(sassTask, jsTask), watchTask);
 // 1. Runs the following tasks in the following order:
 //    a. cleanTask
 //    b. sassTask, jsTask, htmlTask, imagesTask, fontsTask (in parallel)    
-exports.build = series(cleanTask, sassTask, cssTask, parallel(htmlTask, jsTask, imagesTask, fontsTask));
+// exports.build = series(cleanTask, sassTask, cssTask, parallel(htmlTask, jsTask, imagesTask, fontsTask));
+
+// Build Task:     
+exports.build = series(setBuildState, cleanTask, parallel(sassBuildTask, jsBuildTask, jQueryTask), parallel(imagesTask, mediaTask, fontsTask), htmlTask);
