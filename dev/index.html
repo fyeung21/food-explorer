@@ -13,56 +13,63 @@
 	</head>
 	<body>
 		<header>
-			<div>
-				<img src="assets/images/logo.png" srcset="assets/images/small-logo.jpg 55w,
-														  assets/images/logo.png 315w"
-													sizes="(max-width: 375px) 55px,
-															315px"
-													alt="site logo">
-
-				<button id="hamburger-menu">
-					<span class="button-content">
-						<span class="visually-hidden">Menu</span>
-						<span class="fa-solid fa-bars"></span>
-					</span>
+			<section class="top-header">
+				<img src="assets/images/logo.png" srcset="assets/images/small-logo.jpg 55w, assets/images/logo.png 315w"
+					sizes="(max-width: 375px) 55px, 315px"
+					alt="site logo">
+				<!-- hamburger button connects to script.js for toggle function -->
+				<button class="hamburger-btn" id="hamburger-btn" aria-controls="header-menu" aria-expanded="false">
+					<span class="fa-solid fa-bars"></span>
 				</button>
-
-				<div>
-					<div class="hide-me-mobile">
-						<input type="text" placeholder="Search..">
-					</div>
-		
-					<div class="hide-me-mobile">
+				<section class="tablet-desk-view">
+					<article class="tablet-search"><!-- tablet only search bar -->
+						<input type="text" placeholder="Search...">
+						<img src="./assets/images/search.png" alt="search icon">
+					</article>
+					<article class="tablet-desk-socials">
 						<a><span class="fa-brands fa-facebook-f"></span></a>
 						<a><span class="fa-brands fa-google"></span></a>
 						<a><span class="fa-brands fa-twitter"></span></a>
-					</div>
-				</div>
-			</div>
+					</article>
+				</section><!-- close non-mobile-view -->
+			</section><!-- close top-header -->
 
-		
-		
-			<nav>
-				<div class="nav-wrap">
-					<div class="hide-me">
-						<input type="text" placeholder="Search..">
-					</div>
+			<section class="mobile-menu">
+				<article class="mobile-search"><!-- mobile only search bar -->
+					<input type="text" placeholder="Search...">
+					<img src="./assets/images/search.png" alt="search icon">
+				</article>
+				<nav>
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Reviews</a></li>
-						<li><a href="#">Recipes</a></li>
-						<li><a href="#">Contact</a></li>
+						<a href="#"><li>home</li></a>
+						<a href="#"><li>about</li></a>
+						<a href="#"><li>reviews</li></a>
+						<a href="#"><li>recipes</li></a>
+						<a href="#"><li>contact</li></a>
+						<li class="mobile-socials">
+							<a><span class="fa-brands fa-facebook-f"></span></a>
+							<a><span class="fa-brands fa-google"></span></a>
+							<a><span class="fa-brands fa-twitter"></span></a>
+						</li>
 					</ul>
+				</nav>
+			</section><!-- close mobile-menu -->
 
-					<div class="hide-me white">
-						<a><span class="fa-brands fa-facebook-f"></span></a>
-						<a><span class="fa-brands fa-google"></span></a>
-						<a><span class="fa-brands fa-twitter"></span></a>
-					</div>
-				</div>
-			</nav>
-
+			<section class="tablet-desk-menu">
+				<nav>
+					<ul>
+						<a href="#"><li>home</li></a>
+						<a href="#"><li>about</li></a>
+						<a href="#"><li>reviews</li></a>
+						<a href="#"><li>recipes</li></a>
+						<a href="#"><li>contact</li></a>
+						<li class="desktop-search"><!-- desktop only search bar -->
+							<input type="text" placeholder="Search...">
+							<img src="./assets/images/search.png" alt="search icon">
+						</li>
+					</ul>
+				</nav>
+			</section><!-- close tablet-desk-menu -->
 		</header>
 
 		<main>
@@ -92,7 +99,7 @@
 					</section>
 				</div> <!-- close topsection div -->
 
-				
+
 				<div class="aside">
 					<section class="latest-recipes">
 						<h2>latest recipes</h2>
@@ -178,6 +185,7 @@
 				<cite>&copy; 2013 <span>Site designed by Michael Lee. For educational purposes only. Image Credits</span></cite>
 			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 		<script src="scripts/script.js"></script>
 	</body>
 </html>
