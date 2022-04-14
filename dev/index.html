@@ -18,8 +18,19 @@
 					sizes="(max-width: 375px) 55px, 315px"
 					alt="site logo">
 				<button class="hamburger-menu" id="hamburger-menu" aria-controls="header-menu" aria-expanded="false">
-						<span class="fa-solid fa-bars"></span>
+					<span class="fa-solid fa-bars"></span>
 				</button>
+				<section class="non-mobile-view">
+					<article class="tablet-search">
+						<input type="text" placeholder="Search...">
+						<img src="./assets/images/search.png" alt="search icon">
+					</article>
+					<article class="non-mobile-socials">
+						<a><span class="fa-brands fa-facebook-f"></span></a>
+						<a><span class="fa-brands fa-google"></span></a>
+						<a><span class="fa-brands fa-twitter"></span></a>
+					</article>
+				</section>
 			</section>
 			<section class="mobile-menu">
 				<article class="mobile-search">
@@ -33,10 +44,25 @@
 						<a href="#"><li>reviews</li></a>
 						<a href="#"><li>recipes</li></a>
 						<a href="#"><li>contact</li></a>
-						<li class="socials">
+						<li class="mobile-socials">
 							<a><span class="fa-brands fa-facebook-f"></span></a>
 							<a><span class="fa-brands fa-google"></span></a>
 							<a><span class="fa-brands fa-twitter"></span></a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<section class="desktop-menu">
+				<nav>
+					<ul>
+						<a href="#"><li>home</li></a>
+						<a href="#"><li>about</li></a>
+						<a href="#"><li>reviews</li></a>
+						<a href="#"><li>recipes</li></a>
+						<a href="#"><li>contact</li></a>
+						<li class="desktop-search">
+							<input type="text" placeholder="Search...">
+							<img src="./assets/images/search.png" alt="search icon">
 						</li>
 					</ul>
 				</nav>

@@ -5,7 +5,11 @@ header {
     .top-header {
         @include flex-row;
         justify-content: space-between;
-        margin: 0.5rem 0;
+        margin: 0.5rem auto;
+
+        @media (min-width: $desktop) {
+            width: 960px;
+        }
     }
     .hamburger-menu {
         border: none;
@@ -22,9 +26,9 @@ header {
         }
 
         // hide hamburger menu at this width
-        // @media (min-width: $tablet) {
-        //     display: none;
-        // }
+        @media (min-width: $tablet) {
+            display: none;
+        }
     }
 
     .mobile-menu {
@@ -66,7 +70,7 @@ header {
                 }
             }
 
-            .socials {
+            .mobile-socials {
                 background-color: $accent-color;
                 padding: 0;
                 border-bottom: 2px solid $accent-color2;
@@ -84,5 +88,107 @@ header {
                 }
             }
         }
+        @media (min-width: $tablet) {
+            display: none;
+        }
+    }
+    //non-mobile view styles
+
+    .non-mobile-view {
+        display: none;
+
+        @media (min-width: $tablet) {
+            @include flex-row;
+        }
+        
+        .tablet-search {
+            display: none;
+            
+            @media (min-width: $tablet) {
+                @include flex-row;
+                input {
+                    position: relative;
+                    background-color: $color-alt-row;
+                    font-family: $font-navigation;
+                    border: none;
+                    border-radius: 3px;
+                    width: 100%;
+                    padding: 0.5rem;
+                }
+                img {
+                    position: absolute;
+                    right: 11.5rem;
+                    top: 1rem;
+                }
+            }
+            @media (min-width: $desktop) {
+                display: none;
+            }
+        }
+        .non-mobile-socials {
+            background-color: $accent-color;
+            padding: 0;
+            
+            a {
+                font-size: 1.75rem;
+                color: $main-color;
+                padding: 0 1rem;
+                
+                &:hover {
+                    color: $color-alt-row;
+                    
+                    // do animations later
+                }
+                }
+        }
+    }
+
+    //desktop only styles
+
+    .desktop-menu {
+        display: none;
+
+        @media (min-width: $desktop) {
+            display: block;
+            background-color: $accent-color2;
+        }
+
+        ul {
+            @include flex-row;
+            justify-content: center;
+            align-items: center;
+            max-width: 960px;
+            margin: 0 auto;
+
+            a {
+                background-color: $main-color;
+                font-family: $font-navigation;
+                font-size: $font-size-heading;
+                color: $accent-color;
+                text-transform: capitalize;
+                padding: 0.5rem 2.4rem;
+                &:hover {
+                    color: $accent-color2;
+                    background-color: $accent-color;
+                }
+            }
+        }
+        .desktop-search {
+            input {
+                position: relative;
+                font-family: $font-navigation;
+                font-size: $font-size-heading;
+                background-color: $color-alt-row;
+                border: none;
+                width: 280px;
+                padding: 0.75rem;
+            }
+            img {
+                position: absolute;
+                right: 2.5rem;
+                top: 4.25rem;
+            }
+        }
+
     }
 }
