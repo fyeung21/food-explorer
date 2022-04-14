@@ -5,6 +5,7 @@ header {
     .top-header {
         @include flex-row;
         justify-content: space-between;
+        align-items: center;
         margin: 0.5rem auto;
 
         @media (min-width: $desktop) {
@@ -33,7 +34,12 @@ header {
 
     .mobile-menu{
         // must initially `display: none` for toggle to work
-        display: none; 
+        // set visibility to none and height to 0 to mimmick display: none
+        transition: height 0.5s cubic-bezier(0.68, -0.08, 0.48, 1.31), visibility  0.5s cubic-bezier(0.68, -0.08, 0.48, 1.31);
+        height: 0;
+        // display: none;
+        visibility: hidden;
+
 
         .mobile-search {
             @include flex-row;
@@ -89,9 +95,8 @@ header {
                     padding: 0 1rem;
 
                     &:hover {
+                        transition: color .5s ease;
                         color: $color-alt-row;
-
-                        // do animations later
                     }
                 }
             }
@@ -103,10 +108,12 @@ header {
 
     // Toggle class from script.js
 
-    .mobile-menu-active {
-        display: block;
-        // add animation here?
-        transition: all 1s ease;
+    .mobile-menu.mobile-menu-active {
+        // add animation here
+        transition: height 0.5s, visibility 0s;
+        height: 298.4px;
+        visibility: visible;
+        // display: block;
         overflow: hidden;
     }
     
