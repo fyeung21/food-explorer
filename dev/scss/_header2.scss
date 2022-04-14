@@ -102,7 +102,7 @@ header {
 
     //non-mobile view styles
 
-    .non-mobile-view {
+    .tablet-desk-view {
         display: none;
 
         @media (min-width: $tablet) {
@@ -133,7 +133,7 @@ header {
                 display: none;
             }
         }
-        .non-mobile-socials {
+        .tablet-desk-socials {
             background-color: $accent-color;
             padding: 0;
             
@@ -151,9 +151,9 @@ header {
         }
     }
 
-    //desktop only styles
+    // tablet & desktop menu styles
 
-    .desktop-menu {
+    .tablet-desk-menu {
         display: none;
 
         @media (min-width: $desktop) {
