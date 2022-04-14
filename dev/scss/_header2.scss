@@ -29,6 +29,8 @@ header {
         }
     }
 
+    // Mobile menu styles
+
     .mobile-menu{
         // must initially `display: none` for toggle to work
         display: none; 
@@ -40,11 +42,10 @@ header {
                 background-color: $color-alt-row;
                 font-family: $font-navigation;
                 border: none;
-                border-radius: 3px;
                 width: 100%;
                 padding: 0.75rem 0.5rem;
             }
-            // search icon img
+            // search icon
             img {
                 position: absolute;
                 right: 0.5rem;
@@ -68,6 +69,11 @@ header {
                     padding: 0.3rem;
                     &:hover {
                         background-color: $accent-color;
+                    }
+                    // for screen readers
+                    &:focus {
+                        border: 0;
+                        outline: 1px dotted;
                     }
                 }
             }
@@ -95,15 +101,17 @@ header {
         }
     }
 
-    // toggle class from script.js
+    // Toggle class from script.js
+
     .mobile-menu-active {
         display: block;
         // add animation here?
         transition: all 1s ease;
         overflow: hidden;
     }
+    
 
-    // tablet & desktop view styles (located in top-header section)
+    // Tablet & desktop view styles (located in top-header section)
 
     .tablet-desk-view {
         display: none;
@@ -127,7 +135,7 @@ header {
                     width: 100%;
                     padding: 0.5rem;
                 }
-                // search icon img
+                // search icon
                 img {
                     position: absolute;
                     right: 0.5rem;
@@ -149,19 +157,19 @@ header {
                 
                 &:hover {
                     color: $color-alt-row;
-                    
-                    // do animations later
                 }
-                }
+            }
         }
     }
 
-    // tablet & desktop menu styles (located under mobile-menu section)
+
+    // Tablet & desktop menu styles (located under mobile-menu section)
 
     .tablet-desk-menu {
         display: none;
 
-        @media (min-width: $desktop) {
+        // only show for tablet and desktop view
+        @media (min-width: $tablet) {
             display: block;
             background-color: $accent-color2;
         }
@@ -184,11 +192,22 @@ header {
                     color: $accent-color2;
                     background-color: $accent-color;
                 }
+                //for screen-reading
+                &:focus {
+                    border: 0;
+                    outline: 1px dotted $main-color;
+                }
             }
         }
         .desktop-search {
             position: relative;
+            display: none;
 
+            //only display for desktop view
+            @media (min-width: $desktop) {
+                display: block;
+                background-color: $accent-color2;
+            }
             input {
                 font-family: $font-navigation;
                 font-size: $font-size-heading;
@@ -197,7 +216,7 @@ header {
                 width: 280px;
                 padding: 0.75rem;
             }
-            // search icon img
+            // search icon
             img {
                 position: absolute;
                 right: 0.5rem;
