@@ -14,28 +14,24 @@ header {
     .hamburger-btn {
         border: none;
         background-color: transparent;
-
         &:focus {
             border: 0;
             outline: 1px dotted;
         }
-
         .fa-bars {
             color: $main-color;
             font-size: 1.75rem;
         }
 
-        // hide hamburger menu at this width
+        // hide hamburger menu at tablet width and beyond
         @media (min-width: $tablet) {
             display: none;
         }
     }
 
     .mobile-menu{
-        // animation here?
-        transition: all 1s ease;
-        overflow: hidden;
-        display: none;
+        // must initially `display: none` for toggle to work
+        display: none; 
 
         .mobile-search {
             @include flex-row;
@@ -48,6 +44,7 @@ header {
                 width: 100%;
                 padding: 0.75rem 0.5rem;
             }
+            // search icon img
             img {
                 position: absolute;
                 right: 0.5rem;
@@ -97,11 +94,16 @@ header {
             display: none;
         }
     }
+
+    // toggle class from script.js
     .mobile-menu-active {
         display: block;
+        // add animation here?
+        transition: all 1s ease;
+        overflow: hidden;
     }
 
-    //non-mobile view styles
+    // tablet & desktop view styles (located in top-header section)
 
     .tablet-desk-view {
         display: none;
@@ -113,6 +115,7 @@ header {
         .tablet-search {
             display: none;
             
+            //show search on tablet view only
             @media (min-width: $tablet) {
                 @include flex-row;
                 position: relative;
@@ -124,6 +127,7 @@ header {
                     width: 100%;
                     padding: 0.5rem;
                 }
+                // search icon img
                 img {
                     position: absolute;
                     right: 0.5rem;
@@ -137,7 +141,7 @@ header {
         .tablet-desk-socials {
             background-color: $accent-color;
             padding: 0;
-            
+
             a {
                 font-size: 1.75rem;
                 color: $main-color;
@@ -152,7 +156,7 @@ header {
         }
     }
 
-    // tablet & desktop menu styles
+    // tablet & desktop menu styles (located under mobile-menu section)
 
     .tablet-desk-menu {
         display: none;
@@ -193,6 +197,7 @@ header {
                 width: 280px;
                 padding: 0.75rem;
             }
+            // search icon img
             img {
                 position: absolute;
                 right: 0.5rem;
