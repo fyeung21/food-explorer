@@ -5,6 +5,7 @@ header {
     .top-header {
         @include flex-row;
         justify-content: space-between;
+        align-items: center;
         margin: 0.5rem auto;
 
         @media (min-width: $desktop) {
