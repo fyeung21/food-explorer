@@ -34,19 +34,19 @@ header {
     .mobile-menu {
         .mobile-search {
             @include flex-row;
+            position: relative;
             input {
-                position: relative;
                 background-color: $color-alt-row;
                 font-family: $font-navigation;
                 border: none;
                 border-radius: 3px;
                 width: 100%;
-                padding: 0.5rem;
+                padding: 0.75rem 0.5rem;
             }
             img {
                 position: absolute;
                 right: 0.5rem;
-                top: 3.5rem;
+                top: 0.75rem;
             }
         }
         nav {
@@ -106,8 +106,8 @@ header {
             
             @media (min-width: $tablet) {
                 @include flex-row;
+                position: relative;
                 input {
-                    position: relative;
                     background-color: $color-alt-row;
                     font-family: $font-navigation;
                     border: none;
@@ -117,8 +117,8 @@ header {
                 }
                 img {
                     position: absolute;
-                    right: 11.5rem;
-                    top: 1rem;
+                    right: 0.5rem;
+                    top: 0.6rem;
                 }
             }
             @media (min-width: $desktop) {
@@ -174,8 +174,9 @@ header {
             }
         }
         .desktop-search {
+            position: relative;
+
             input {
-                position: relative;
                 font-family: $font-navigation;
                 font-size: $font-size-heading;
                 background-color: $color-alt-row;
@@ -185,8 +186,8 @@ header {
             }
             img {
                 position: absolute;
-                right: 2.5rem;
-                top: 4.25rem;
+                right: 0.5rem;
+                top: 0.8rem;
             }
         }
 
