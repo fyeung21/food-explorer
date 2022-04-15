@@ -31,5 +31,9 @@ $font-color-body: #020202;
 $font-color-heading-hover: $main-color;
 
 //--- Media Queries
-$tablet: 37.5rem;
-$desktop: 50rem;
+// 600 px -- small - medium tablets
+$tablet: 37.5em;
+// 768 px -- large tablets
+$large-tablet: 48em;
+// 1024px  -- laptops
+$desktop: 64em;
