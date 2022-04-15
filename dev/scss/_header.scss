@@ -6,6 +6,7 @@ header {
         @include flex-row;
         justify-content: space-between;
         align-items: center;
+        padding: 0 .5rem;
         margin: 0.5rem auto;
 
         @media (min-width:$tablet){
