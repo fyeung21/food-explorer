@@ -37,11 +37,11 @@ npx gulp build
 
   ## Mobile
 
-  <img src="./dev/assets/images/ss-mobile.png">
+  <img src="./dev/assets/images/ss-mobile.png" width="200px">
 
   ## Tablet
 
-  <img src="./dev/assets/images/ss-tablet.png">
+  <img src="./dev/assets/images/ss-tablet.png" width="470px">
 
   ## Desktop
 
