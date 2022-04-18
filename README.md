@@ -41,9 +41,9 @@ npx gulp build
 
   ## Tablet
 
-  <img src="./dev/assets/images/ss-mobile.png">
+  <img src="./dev/assets/images/ss-tablet.png">
 
   ## Desktop
 
-  <img src="./dev/assets/images/ss-mobile.png">
+  <img src="./dev/assets/images/ss-desktop.png">
 
