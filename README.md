@@ -37,14 +37,13 @@ Final project for Web Dev 2 course in FWD program.
 
   ## Mobile
 
-  <img src="./assets/images/mobile1.png">
-  <img src="./assets/images/mobile2.png">
+  <img src="./dev/assets/images/ss-mobile.png">
 
   ## Tablet
 
-  <img src="./assets/images/tablet.png">
+  <img src="./dev/assets/images/ss-mobile.png">
 
   ## Desktop
 
-  <img src="./assets/images/desktop.png">
+  <img src="./dev/assets/images/ss-mobile.png">
 
