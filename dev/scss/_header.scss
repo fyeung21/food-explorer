@@ -158,11 +158,17 @@ header {
                     width: 100%;
                     padding: 0.5rem;
                 }
-                // search icon
+                //search icon
                 img {
                     position: absolute;
                     right: 0.5rem;
-                    top: 0.6rem;
+                    top: 0.3rem;
+                }
+            }
+            @media (min-width: $large-tablet) {
+                //adjust search icon position
+                img {
+                    top: 0.5rem;
                 }
             }
             @media (min-width: $desktop) {
@@ -176,8 +182,7 @@ header {
             a {
                 font-size: 1.75rem;
                 color: $main-color;
-                padding: 0 1rem;
-                
+                padding: 0 0 0 1rem;
                 &:hover {
                     color: $color-alt-row;
                 }
